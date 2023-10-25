@@ -16,14 +16,7 @@
                             </div>
                             <h6>{{ __('home.welcome') }}</h6>
                             <h2>Bienvenido a SoyWarmi</h2>
-                            <p>
-                                Somos Soy Warmi, una organización sin fines de lucro conformada por jóvenes y dedicada a
-                                promover la educación sexual integral. Buscamos fomentar una sexualidad saludable,
-                                segura
-                                y libre de culpa, proporcionando información y recursos necesarios para tomar decisiones
-                                informadas a través de medios digitales y diversas
-                                actividades.
-                            </p>
+                            <p>{{ __('home.resum')}}</p>
 
                             {{-- <p>This is an edu meeting HTML CSS template provided by <a rel="nofollow"
                                     href="https://templatemo.com/page/1" target="_blank">TemplateMo website</a>. This is

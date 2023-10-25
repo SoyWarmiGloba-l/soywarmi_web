@@ -18,10 +18,12 @@
                         <li class="scroll-to-section"><a href="#contact">Cont&aacute;ctanos</a></li>
                         <li class="scroll-to-section"><a href="#apply">Postula Aqu&iacute;</a></li>
                         <li class="has-sub">
-                            <a href="javascript:void(0)">Idiomas</a>
+                            <a href="javascript:void(0)">
+                                {{ config('app.locale') }}
+                            </a>
                             <ul class="sub-menu">
-                                <li><a href="{{ url('locale/en') }}">Ingles</a></li>
-                                <li><a href="{{ url('locale/es') }}">Español</a></li>
+                                <li><a href="{{ url('locale/en') }}">En</a></li>
+                                <li><a href="{{ url('locale/es') }}">Es</a></li>
                             </ul>
                         </li>
                     </ul>

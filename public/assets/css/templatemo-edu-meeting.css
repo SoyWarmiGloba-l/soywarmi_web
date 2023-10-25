@@ -143,7 +143,7 @@ hgroup {
 html,
 body {
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: normal;
     background-color: #fff;
     font-size: 16px;
     -ms-text-size-adjust: 100%;
@@ -157,7 +157,7 @@ a {
 }
 
 a:hover {
-    color: #8B3A3D;
+    color: #8b3a3d;
 }
 
 h1,
@@ -197,12 +197,12 @@ body {
 }
 
 ::selection {
-    background: #8B3A3D;
+    background: #8b3a3d;
     color: #fff;
 }
 
 ::-moz-selection {
-    background: #8B3A3D;
+    background: #8b3a3d;
     color: #fff;
 }
 
@@ -242,7 +242,7 @@ body {
 .main-button-yellow a {
     font-size: 13px;
     color: #fff;
-    background-color: #8B3A3D;
+    background-color: #8b3a3d;
     padding: 12px 30px;
     display: inline-block;
     border-radius: 22px;
@@ -302,12 +302,12 @@ header
 }
 
 .sub-header .right-icons ul li a:hover {
-    color: #8B3A3D;
+    color: #8b3a3d;
 }
 
 .sub-header .left-content p em {
     font-style: normal;
-    color: #8B3A3D;
+    color: #8b3a3d;
 }
 
 .background-header {
@@ -417,12 +417,12 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-    color: #8B3A3D !important;
+    color: #8b3a3d !important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-    color: #8B3A3D !important;
+    color: #8b3a3d !important;
     opacity: 1;
 }
 
@@ -447,7 +447,7 @@ header
 
 .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: absolute;
-    width: 200px;
+    width: 50px;
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
     overflow: hidden;
     top: 40px;
@@ -484,7 +484,7 @@ header
 
 .header-area .main-nav .nav li.has-sub ul li a:hover {
     background: #fff;
-    color: #8B3A3D !important;
+    color: #8b3a3d !important;
     padding-left: 25px;
 }
 
@@ -624,7 +624,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-    color: #8B3A3D;
+    color: #8b3a3d;
 }
 
 @media (max-width: 1200px) {
@@ -643,7 +643,7 @@ header
     }
     .header-area.header-sticky .nav li a:hover,
     .header-area.header-sticky .nav li a.active {
-        color: #8B3A3D !important;
+        color: #8b3a3d !important;
         opacity: 1;
     }
     .header-area.header-sticky .nav li.search-icon a {
@@ -701,7 +701,7 @@ header
     }
     .header-area .main-nav .nav li a:hover {
         background: #eee !important;
-        color: #8B3A3D !important;
+        color: #8b3a3d !important;
     }
     .header-area .main-nav .nav li.has-sub ul.sub-menu {
         position: relative;
@@ -806,7 +806,7 @@ banner
 
 .main-banner .caption h2 em {
     font-style: normal;
-    color: #8B3A3D;
+    color: #8b3a3d;
     font-weight: 900;
 }
 
@@ -1143,7 +1143,7 @@ section.apply-now .item p {
     transition: transform 200ms ease-in-out;
 }
 .accordion-head.is-open {
-    color: #8B3A3D;
+    color: #8b3a3d;
     border-bottom: none;
 }
 .accordion-head.is-open .icon {
@@ -1198,7 +1198,7 @@ section.our-courses {
 }
 
 .our-courses .item .down-content .info ul li i {
-    color: #8B3A3D;
+    color: #8b3a3d;
     font-size: 14px;
 }
 
@@ -1346,7 +1346,7 @@ section.our-facts h2 {
 
 .count-digit {
     margin: 5px 0px;
-    color: #8B3A3D;
+    color: #8b3a3d;
     font-weight: 700;
     font-size: 36px;
 }
@@ -1509,7 +1509,7 @@ section.contact-us .right-info ul li span {
 }
 
 .footer p a {
-    color: #8B3A3D;
+    color: #8b3a3d;
 }
 
 /*
@@ -1739,7 +1739,7 @@ section.meetings-page .pagination ul li a:hover {
 }
 
 .meeting-single-item .down-content .share ul li a:hover {
-    color: #8B3A3D;
+    color: #8b3a3d;
 }
 
 /* Meeting item column */
