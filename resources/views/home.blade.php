@@ -12,9 +12,9 @@
                     <div class="col-lg-12">
                         <div class="caption">
                             <div class="main-button-red mb-4">
-                                <div class="scroll-to-section"><a href="#contact">Nuestra Misión!</a></div>
+                                <div class="scroll-to-section"><a href="#contact">{{ __('home.mission') }}</a></div>
                             </div>
-                            <h6>Hola, bienvenido!</h6>
+                            <h6>{{ __('home.welcome') }}</h6>
                             <h2>Bienvenido a SoyWarmi</h2>
                             <p>
                                 Somos Soy Warmi, una organización sin fines de lucro conformada por jóvenes y dedicada a
