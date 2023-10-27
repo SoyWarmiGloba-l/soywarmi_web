@@ -12,6 +12,7 @@ class InfoController extends Controller
     public function contact(Request $request)
     {
         try {
+            //TODO: Cambiar correo electrónico por soywarmiglobal.edu@gmail.com
             Mail::to($request->email)->send(new ContactForm($request->all()));
             Toastr::success('Mensaje enviado, puedes seguir navegando, Gracias', 'Enviado', [
                 'positionClass' => 'toast-bottom-right',

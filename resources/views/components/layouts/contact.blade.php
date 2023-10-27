@@ -58,17 +58,13 @@
                         </li>
                         <li>
                             <h6>{{ __('contact.social_networks') }}</h6>
-                            <span><a class="text-white" href="https://www.facebook.com/soywarmi"
-                                    target="_blank">Síguenos en
-                                    Facebook!</a></span>
+                            <span><a class="text-white" href="https://www.facebook.com/soywarmi" target="_blank">{{
+                                    __('contact.follow_facebook') }}</a></span>
                             <span><a class="text-white" href="https://www.instagram.com/soywarmiglobal/"
-                                    target="_blank">Síguenos en
-                                    Instagram!</a></span>
+                                    target="_blank">{{ __('contact.follow_instagram') }}</a></span>
                             <span><a class="text-white"
                                     href="https://tiktok.com/@soywarmi?fbclid=IwAR1o1G5pv8Ud1F0g7R-Nmm4pp0YrpAMfE3pmL9aS7GC7iEkyqKEX-EeeHnI"
-                                    target="_blank">Síguenos
-                                    en
-                                    Tiktok!</a></span>
+                                    target="_blank">{{ __('contact.follow_tiktok') }}</a></span>
                         </li>
                         <li>
                             <div class="container">
