@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="{{ asset('assets/css/templatemo-edu-meeting.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/owl.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/lightbox.css') }}">
+    <link rel="stylesheet" href="{{ asset('toastr.min.css') }}">
 </head>
 
 <body>
-
     <x-layouts.navbar />
 
     {{ $slot }}
@@ -43,6 +43,7 @@
     <script src="{{ asset('assets/js/video.js') }}"></script>
     <script src="{{ asset('assets/js/slick-slider.js') }}"></script>
     <script src="{{ asset('assets/js/custom.js') }}"></script>
+    <script src="{{ asset('toastr.min.js') }}"></script>
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');
@@ -90,6 +91,7 @@
           checkSection();
         });
     </script>
+    {!! Toastr::message() !!}
 </body>
 
 </body>

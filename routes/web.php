@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\InfoController;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,7 @@ Route::get('/', function () {
 
 Route::get('locale/{locale}', function ($locale) {
     session()->put('locale', $locale);
-
     return Redirect::back();
 });
+
+Route::post('contact/form', [InfoController::class, 'contact'])->name('contact.form');

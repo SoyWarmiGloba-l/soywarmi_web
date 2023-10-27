@@ -1387,7 +1387,7 @@ contact us
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 140px 0px 0px 0px;
+    padding: 14px 0px 0px 0px;
 }
 section.contact-us {
     background-image: url(../images/meetings-bg.jpg);
@@ -1395,7 +1395,7 @@ section.contact-us {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 140px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
 }
 
 section.contact-us #contact {
