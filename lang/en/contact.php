@@ -9,4 +9,7 @@ return [
     'phone_number' => 'Phone numbers',
     'email' => 'Email',
     'social_networks' => 'Social Networks',
+    'follow_facebook' => 'Follow us on Facebook',
+    'follow_instagram' => 'Follow us on Instagram',
+    'follow_tiktok' => 'Follow us on TikTok',
 ];
