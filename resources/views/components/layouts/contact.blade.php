@@ -54,7 +54,17 @@
                         </li>
                         <li>
                             <h6>{{ __('contact.email') }}</h6>
-                            <span>soywarmiglobal.edu@gmail.com</span>
+                            <style>
+                                .linkMailHover{
+                                    color: white;
+                                    text-decoration: none;
+                                }
+                                .linkMailHover:hover{
+                                    text-decoration: underline;
+                                    color: #be0a2e;
+                                }
+                            </style>
+                            <a class="linkMailHover" href="mailto:soywarmiglobal.edu@gmail.com">soywarmiglobal.edu@gmail.com&nbsp;&nbsp;</a>
                         </li>
                         <li>
                             <h6>{{ __('contact.social_networks') }}</h6>
