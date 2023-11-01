@@ -11,12 +11,12 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li class="scroll-to-section"><a href="{{ route('home') }}" class="active">Inicio</a></li>
+                        {{--<li class="scroll-to-section"><a href="{{ route('home') }}" class="active">Inicio</a></li>--}}
                         <li><a href="meetings.html">Programas</a></li>
-                        <li class="scroll-to-section"><a href="#apply">Recursos</a></li>
+                        <li><a href="{{ route('resources') }}">Recursos</a></li>
                         <li class="scroll-to-section"><a href="#courses">Nosotros</a></li>
                         <li class="scroll-to-section"><a href="#contact">Cont&aacute;ctanos</a></li>
-                        <li class="scroll-to-section"><a href="#apply">Postula Aqu&iacute;</a></li>
+                        <li class="scroll-to-section"><a href="#apply">Postular</a></li>
                         <li class="has-sub">
                             <a href="javascript:void(0)">
                                 {{ config('app.locale') }}
