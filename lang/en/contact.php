@@ -1,4 +1,5 @@
 <?php
+
 return [
     'title_contact' => 'Contact Us!',
     'your_name' => 'Your Name...',
@@ -12,4 +13,5 @@ return [
     'follow_facebook' => 'Follow us on Facebook',
     'follow_instagram' => 'Follow us on Instagram',
     'follow_tiktok' => 'Follow us on TikTok',
+    'back_to_home' => 'Back to Home',
 ];

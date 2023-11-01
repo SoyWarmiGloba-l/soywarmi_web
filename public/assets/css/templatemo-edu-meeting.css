@@ -1022,7 +1022,7 @@ section.upcoming-meetings .categories .main-button-red a {
 
 .meeting-item .thumb .price {
     position: absolute;
-    left: 20px;
+    right: 20px;
     top: 20px;
 }
 
@@ -1038,8 +1038,7 @@ section.upcoming-meetings .categories .main-button-red a {
 .meeting-item .down-content {
     background-color: #fff;
     padding: 30px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px;
 }
 
 .meeting-item .down-content .date {

@@ -13,4 +13,5 @@ return [
     'follow_facebook' => 'Síganos en Facebook',
     'follow_instagram' => 'Síganos en Instagram',
     'follow_tiktok' => 'Síganos en TikTok',
+    'back_to_home' => 'Volver a la página de inicio',
 ];

@@ -3,6 +3,7 @@
 use App\Http\Controllers\InfoController;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ResourceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,9 +20,15 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::get('/testimony', function () {
+    return view('testimony');
+})->name('testimony');
+
 Route::get('locale/{locale}', function ($locale) {
     session()->put('locale', $locale);
+
     return Redirect::back();
 });
+Route::get('resources', [ResourceController::class, 'index'])->name('resources');
 
 Route::post('contact/form', [InfoController::class, 'contact'])->name('contact.form');
