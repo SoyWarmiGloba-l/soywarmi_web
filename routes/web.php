@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TestimonyController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,9 +19,7 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/testimony', function () {
-    return view('testimony');
-})->name('testimony');
+Route::get('/testimony', [TestimonyController::class, 'index'])->name('testimony');
 
 Route::get('locale/{locale}', function ($locale) {
     session()->put('locale', $locale);
