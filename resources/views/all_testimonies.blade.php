@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h6>Puedes encontrar recursos importantes aqui</h6>
+                    <h6>Testimonios</h6>
                     <h2>Dale Click!!</h2>
                 </div>
             </div>
@@ -17,7 +17,7 @@
                         {{--<div class="col-lg-12">
                             <div class="filters">
                                 <ul>
-                                    <li data-filter="*"  class="active">All Meetings</li>
+                                    <li data-filter="*" class="active">All Meetings</li>
                                     <li data-filter=".soon">Soon</li>
                                     <li data-filter=".imp">Important</li>
                                     <li data-filter=".att">Attractive</li>
@@ -26,33 +26,34 @@
                         </div>--}}
                         <div class="col-lg-12">
                             <div class="row grid">
-                                @forelse($resources as $resource)
+                                @forelse($testimonies as $testimony)
 
-                                    <div class="col-lg-4 templatemo-item-col all soon">
-                                        <a href="{{ asset($resource->url) }}" target="_blank">
+                                <div class="col-lg-4 templatemo-item-col all soon">
+                                    <a href="{{ route('testimony.show', $testimony->slug) }}" target="_blank">
                                         <div class="meeting-item">
                                             <div class="thumb">
                                                 <div class="price">
-                                                    <span>{{ '.' .$resource->code_type }}</span>
+                                                    <span>{{
+                                                        \Carbon\Carbon::parse($testimony->created_at)->diffForHumans()
+                                                        }}</span>
                                                 </div>
                                             </div>
                                             <div class="down-content">
-                                                <h4>{{ $resource->name }}</h4>
-                                                <p>{{ $resource->description }}</p>
+                                                <h4 class="pt-4">{{ $testimony->title }}</h4>
+                                                <p>{{ $testimony->description }}</p>
                                             </div>
                                         </div>
-                                        </a>
-                                    </div>
+                                    </a>
+                                </div>
                                 @empty
-                                    <div class="col-lg-12">
-                                        <div class="text-center">
-                                            <h4>No hay recursos disponibles</h4>
-                                        </div>
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <h4>No hay recursos disponibles</h4>
                                     </div>
+                                </div>
                                 @endforelse
                             </div>
                         </div>
-                        <x-layouts.back_home />
                         {{--<div class="col-lg-12">
                             <div class="pagination">
                                 <ul>
