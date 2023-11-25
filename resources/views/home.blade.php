@@ -11,11 +11,21 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="caption">
-                            <div class="main-button-red mb-4">
-                                <div class="scroll-to-section"><a href="#contact">{{ __('home.mission') }}</a></div>
+                            <div class="main-button-red mb-4 animated flash">
+                                <div>
+                                    <a href="{{ route('our-mission') }}">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <path d="M12 8l4 4-4 4M8 12h7" />
+                                        </svg>
+                                        {{ __('home.mission') }}
+                                    </a>
+                                </div>
                             </div>
-                            <h6>{{ __('home.welcome') }}</h6>
-                            <h2>Bienvenido a SoyWarmi</h2>
+                            <h6></h6>
+                            <h2>{{ __('home.welcome') }}</h2>
                             <p>{{ __('home.resum')}}</p>
 
                             {{-- <p>This is an edu meeting HTML CSS template provided by <a rel="nofollow"
@@ -251,33 +261,33 @@
                 <div class="col-lg-6">
                     <div class="accordions is-first-expanded">
                         @forelse($otherNews as $new)
-                            <article class="accordion @if($loop->last) last-accordion @endif">
-                                <div class="accordion-head">
-                                    <span>{{ $new->title }}</span>
-                                    <span class="icon">
+                        <article class="accordion @if($loop->last) last-accordion @endif">
+                            <div class="accordion-head">
+                                <span>{{ $new->title }}</span>
+                                <span class="icon">
                                     <i class="icon fa fa-chevron-right"></i>
                                 </span>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content">
+                                    <p>{{ Str::limit($new->description, 120) }}</p>
                                 </div>
-                                <div class="accordion-body">
-                                    <div class="content">
-                                        <p>{{ Str::limit($new->description, 120) }}</p>
-                                    </div>
-                                </div>
-                            </article>
+                            </div>
+                        </article>
                         @empty
-                            <article class="accordion">
-                                <div class="accordion-head">
-                                    <span>No News</span>
-                                    <span class="icon">
+                        <article class="accordion">
+                            <div class="accordion-head">
+                                <span>No News</span>
+                                <span class="icon">
                                     <i class="icon fa fa-chevron-right"></i>
                                 </span>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content">
+                                    <p>No News</p>
                                 </div>
-                                <div class="accordion-body">
-                                    <div class="content">
-                                        <p>No News</p>
-                                    </div>
-                                </div>
-                            </article>
+                            </div>
+                        </article>
                         @endforelse
                     </div>
                 </div>

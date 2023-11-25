@@ -28,7 +28,11 @@ Table of contents
 font & reset css
 ---------------------------------------------
 */
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantora+One&display=swap");
 /*
 ---------------------------------------------
 reset
@@ -142,7 +146,9 @@ hgroup {
 
 html,
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: 'Lora', serif; */
+    /* font-family: 'Cantora One', sans-serif; */
     font-weight: normal;
     background-color: #fff;
     font-size: 16px;
@@ -1656,8 +1662,8 @@ section.meetings-page .pagination ul li a:hover {
 .meeting-single-item .down-content {
     background-color: #fff;
     padding: 40px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    /* border-bottom-right-radius: 20px; */
+    /* border-bottom-left-radius: 20px; */
 }
 
 .meeting-single-item .thumb .date {
@@ -1708,12 +1714,13 @@ section.meetings-page .pagination ul li a:hover {
 }
 
 .meeting-single-item .down-content p.description {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     padding-top: 40px;
     border-top: 1px solid #eee;
     margin-bottom: 40px;
     padding-bottom: 40px;
     border-bottom: 1px solid #eee;
+    text-align: justify;
 }
 
 .meeting-single-item .down-content .share {
@@ -1738,6 +1745,11 @@ section.meetings-page .pagination ul li a:hover {
     transition: all 0.3s;
 }
 
+.border-color-card {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #f2ae5d;
+}
 .meeting-single-item .down-content .share ul li a:hover {
     color: #8b3a3d;
 }
@@ -1745,6 +1757,7 @@ section.meetings-page .pagination ul li a:hover {
 /* Meeting item column */
 .templatemo-item-col {
     width: 31%;
+    background-color: transparent;
 }
 
 @media (max-width: 992px) {
@@ -1935,4 +1948,37 @@ responsive
 }
 .share-btn.email {
     background: #444444;
+}
+
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes flash {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+@keyframes flash {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+.flash {
+    -webkit-animation-name: flash;
+    animation-name: flash;
 }

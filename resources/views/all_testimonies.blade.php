@@ -27,6 +27,13 @@
                         <div class="col-lg-12">
                             <div class="row grid">
                                 @forelse($testimonies as $testimony)
+                                @php
+                                $arrayColores = [
+                                'F2AE5D',
+                                '8B3A3D',
+                                '00858E'
+                                ];
+                                @endphp
 
                                 <div class="col-lg-4 templatemo-item-col all soon">
                                     <a href="{{ route('testimony.show', $testimony->slug) }}" target="_blank">
@@ -38,7 +45,8 @@
                                                         }}</span>
                                                 </div>
                                             </div>
-                                            <div class="down-content">
+                                            <div class="down-content"
+                                                style="border-width: 5px; border-style: solid; border-color: #{{ $arrayColores[rand(0, 2)] }};">
                                                 <h4 class="pt-4">{{ $testimony->title }}</h4>
                                                 <p>{{ $testimony->description }}</p>
                                             </div>
