@@ -295,279 +295,42 @@
         </div>
     </section>
 
-    <section class="our-courses" id="courses">
+    <section class="our-courses" id="courses" style="padding-top: 30px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-heading">
-                        <h2>Testimonios</h2>
+                        <a href="{{ route('testimony') }}">
+                            <h2>Todos los testimonios aquí&nbsp;👈</h2>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="owl-courses-item owl-carousel">
+                        @forelse ($testimonies as $testimony)
                         <div class="item">
-                            <a href="{{ route('testimony') }}" target="_blank">
-                                <img src="assets/images/course-01.jpg" alt="Course One">
+                            <a href="{{ route('testimony.show', $testimony->slug) }}" target="_blank">
+                                @if ($testimony->person->role_id == 3)
+                                <img src="https://ui-avatars.com/api/?name={{ $testimony->person->name }}?size=50"
+                                    alt="Course One">
+                                @else
+                                <img src="{{ $testimony->person->photo }}" alt="Course One">
+                                @endif
                                 <div class="down-content">
-                                    <h4>Morbi tincidunt elit vitae justo rhoncus</h4>
+                                    <h4>{{ $testimony->title }}</h4>
                                     <div class="info">
                                         <div class="row">
-                                            <div class="col-8">
-                                                <ul>
-                                                    <li><i class="fa fa-star"></i></li>
-                                                    <li><i class="fa fa-star"></i></li>
-                                                    <li><i class="fa fa-star"></i></li>
-                                                    <li><i class="fa fa-star"></i></li>
-                                                    <li><i class="fa fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-4">
-                                                <span>$160</span>
+                                            <div class="col-12" style="word-break: break-all;">
+                                                <p>{{ Str::limit($testimony->description, 50, '...') }}</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="item">
-                            <img src="assets/images/course-02.jpg" alt="Course Two">
-                            <div class="down-content">
-                                <h4>Curabitur molestie dignissim purus vel</h4>
-                                <div class="info">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <ul>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4">
-                                            <span>$180</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/course-03.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Nulla at ipsum a mauris egestas tempor</h4>
-                                <div class="info">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <ul>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4">
-                                            <span>$140</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/course-04.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Aenean molestie quis libero gravida</h4>
-                                <div class="info">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <ul>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4">
-                                            <span>$120</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/course-01.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Lorem ipsum dolor sit amet adipiscing elit</h4>
-                                <div class="info">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <ul>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4">
-                                            <span>$250</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/course-02.jpg" alt="">
-                            <div class="down-content">
-                                <h4>TemplateMo is the best website for Free CSS</h4>
-                                <div class="info">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <ul>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4">
-                                            <span>$270</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/course-03.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Web Design Templates at your finger tips</h4>
-                                <div class="info">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <ul>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4">
-                                            <span>$340</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/course-04.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Please visit our website again</h4>
-                                <div class="info">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <ul>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4">
-                                            <span>$360</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/course-01.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Responsive HTML Templates for you</h4>
-                                <div class="info">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <ul>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4">
-                                            <span>$400</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/course-02.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Download Free CSS Layouts for your business</h4>
-                                <div class="info">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <ul>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4">
-                                            <span>$430</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/course-03.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Morbi in libero blandit lectus cursus</h4>
-                                <div class="info">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <ul>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4">
-                                            <span>$480</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/course-04.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Curabitur molestie dignissim purus</h4>
-                                <div class="info">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <ul>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4">
-                                            <span>$560</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @empty
+                        No hay
+                        @endforelse
                     </div>
                 </div>
             </div>

@@ -48,7 +48,7 @@
                                             <div class="down-content"
                                                 style="border-width: 5px; border-style: solid; border-color: #{{ $arrayColores[rand(0, 2)] }};">
                                                 <h4 class="pt-4">{{ $testimony->title }}</h4>
-                                                <p>{{ $testimony->description }}</p>
+                                                <p>{{ Str::limit($testimony->description, 57, '...') }}</p>
                                             </div>
                                         </div>
                                     </a>

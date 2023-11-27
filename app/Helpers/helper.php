@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Cache;
 
 function authenticate()
 {
@@ -16,10 +17,18 @@ function authenticate()
 
     return $response->json()["idToken"];
 }
+
 function getApiData($url, $data)
 {
+    if (Cache::has('google_token')) {
+
+        $token = Cache::get('google_token');
+    } else {
+        Cache::put('google_token', authenticate(), now()->addMinutes(60));
+        $token = authenticate();
+    }
     if (empty($data)) {
-        $response = Http::withToken(authenticate())->get(env('API_URL_API') . '/api/v1/' . $url);
+        $response = Http::withToken($token)->get(env('API_URL_API') . '/api/v1/' . $url);
     } else {
         $response = Http::withToken(authenticate())->post($url, $data);
     }
