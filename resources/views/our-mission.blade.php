@@ -33,21 +33,28 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="row grid">
+                                                @forelse ($teams as $team)
+                                                @foreach ($team->person as $person)
                                                 <div class="col-lg-4 templatemo-item-col all soon">
                                                     <div class="meeting-item">
                                                         <div class="thumb">
                                                             <a href="meeting-details.html"><img
-                                                                    src="assets/images/meeting-01.jpg" alt=""></a>
+                                                                    src="{{ env('API_URL_API') . '/' . $person->photo }}"
+                                                                    alt=""></a>
                                                         </div>
                                                         <div class="down-content" style="padding: 10px;">
+
                                                             <a href="meeting-details.html">
-                                                                <h4>New Lecturers Meeting</h4>
+                                                                <h4>{{ $person->name . ' ' . $person->lastname }}</h4>
                                                             </a>
-                                                            <p style="margin-left: 0;">Morbi in libero blandit
-                                                                lectus<br>cursus ullamcorper.</p>
+                                                            <p style="margin-left: 0;">{{ $person->description }}</p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                @endforeach
+                                                @empty
+                                                <p>No hay equipos</p>
+                                                @endforelse
                                             </div>
                                         </div>
                                     </div>

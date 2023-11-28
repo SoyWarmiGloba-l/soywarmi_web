@@ -8,6 +8,7 @@ class HomeController extends Controller
 {
     protected $newsEndpoint = 'news';
     protected $testimonyEndPoint = 'testimonies';
+    protected $teamEndPoint = 'teams';
     public function index()
     {
         $news = getApiData($this->newsEndpoint, []);
@@ -20,5 +21,12 @@ class HomeController extends Controller
         $testimonies = array_slice($testimonies, 0, 5);
 
         return view('home', compact('news', 'news1', 'news2', 'otherNews', 'testimonies'));
+    }
+
+    public function indexOurMission()
+    {
+        $teams = getApiData($this->teamEndPoint . '/rol/5', []);
+
+        return view('our-mission', compact('teams'));
     }
 }
