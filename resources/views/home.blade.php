@@ -54,9 +54,8 @@
                                 <img src="assets/images/service-icon-01.png" alt="">
                             </div>
                             <div class="down-content">
-                                <h4>Best Education</h4>
-                                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non
-                                    vestibulum.</p>
+                                <h4>{{ __('home.bestproyect') }}</h4>
+                                <p>{{ __('home.bestproyectdescription') }}</p>
                             </div>
                         </div>
 
@@ -65,20 +64,8 @@
                                 <img src="assets/images/service-icon-02.png" alt="">
                             </div>
                             <div class="down-content">
-                                <h4>Best Teachers</h4>
-                                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non
-                                    vestibulum.</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="icon">
-                                <img src="assets/images/service-icon-03.png" alt="">
-                            </div>
-                            <div class="down-content">
-                                <h4>Best Students</h4>
-                                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non
-                                    vestibulum.</p>
+                                <h4>World Learning.</h4>
+                                <p>{{ __('home.impulsing') }}</p>
                             </div>
                         </div>
 
@@ -87,9 +74,8 @@
                                 <img src="assets/images/service-icon-02.png" alt="">
                             </div>
                             <div class="down-content">
-                                <h4>Online Meeting</h4>
-                                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non
-                                    vestibulum.</p>
+                                <h4>The Pollination Project.</h4>
+                                <p>{{ __('home.bestpopulationproyect') }}</p>
                             </div>
                         </div>
 
@@ -98,9 +84,8 @@
                                 <img src="assets/images/service-icon-03.png" alt="">
                             </div>
                             <div class="down-content">
-                                <h4>Best Networking</h4>
-                                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non
-                                    vestibulum.</p>
+                                <h4>{{ __('home.bestparticipating') }}</h4>
+                                <p>{{ __('home.bestparticipatingdescription') }}</p>
                             </div>
                         </div>
 
@@ -109,8 +94,28 @@
             </div>
         </div>
     </section>
-
     <section class="upcoming-meetings" id="meetings">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>{{ __('home.whyus') }}</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="categories">
+                        <h4>{{ __('home.whyus1') }}</h4>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="categories">
+                        <h4>{{ __('home.whyus2') }}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- <section class="upcoming-meetings" id="meetings">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -219,7 +224,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="apply-now" id="apply">
         <div class="container text-center">
@@ -301,7 +306,7 @@
                 <div class="col-lg-12">
                     <div class="section-heading">
                         <a href="{{ route('testimony') }}">
-                            <h2>Todos los testimonios aquí&nbsp;👈</h2>
+                            <h2>{{ __('home.alltestimony') }}👈</h2>
                         </a>
                     </div>
                 </div>
@@ -310,12 +315,12 @@
                         @forelse ($testimonies as $testimony)
                         <div class="item">
                             <a href="{{ route('testimony.show', $testimony->slug) }}" target="_blank">
-                                @if ($testimony->person->role_id == 3)
+                                {{-- @if ($testimony->person->role_id == 3)
                                 <img src="https://ui-avatars.com/api/?name={{ $testimony->person->name }}?size=50"
                                     alt="Course One">
                                 @else
                                 <img src="{{ $testimony->person->photo }}" alt="Course One">
-                                @endif
+                                @endif --}}
                                 <div class="down-content">
                                     <h4>{{ $testimony->title }}</h4>
                                     <div class="info">
@@ -343,20 +348,20 @@
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h2>A Few Facts About Our University</h2>
+                            <h2>{{ __('home.smallus') }}</h2>
                         </div>
                         <div class="col-lg-6">
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="count-area-content percentage">
-                                        <div class="count-digit">94</div>
-                                        <div class="count-title">Succesed Students</div>
+                                    <div class="count-area-content">
+                                        <div class="count-digit">70</div>
+                                        <div class="count-title">{{ __('home.countPerson') }}</div>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="count-area-content">
-                                        <div class="count-digit">126</div>
-                                        <div class="count-title">Current Teachers</div>
+                                        <div class="count-digit">500</div>
+                                        <div class="count-title">{{ __('home.countWork') }}</div>
                                     </div>
                                 </div>
                             </div>
@@ -365,14 +370,14 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="count-area-content new-students">
-                                        <div class="count-digit">2345</div>
-                                        <div class="count-title">New Students</div>
+                                        <div class="count-digit">10</div>
+                                        <div class="count-title">{{ __('home.countEducation') }}</div>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="count-area-content">
-                                        <div class="count-digit">32</div>
-                                        <div class="count-title">Awards</div>
+                                        <div class="count-digit">150</div>
+                                        <div class="count-title">{{ __('home.countVoluntary') }}</div>
                                     </div>
                                 </div>
                             </div>
@@ -381,7 +386,7 @@
                 </div>
                 <div class="col-lg-6 align-self-center">
                     <div class="video">
-                        <a href="https://www.youtube.com/watch?v=HndV87XpkWg" target="_blank"><img
+                        <a href="https://youtu.be/efiYGs8wBOg?si=LY8x8iV-l1p-hqEW" target="_blank"><img
                                 src="assets/images/play-icon.png" alt=""></a>
                     </div>
                 </div>

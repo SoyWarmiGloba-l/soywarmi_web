@@ -15,9 +15,10 @@
                         --}}
                         <li><a href="meetings.html">Programas</a></li>
                         <li><a href="{{ route('resources') }}">Recursos</a></li>
-                        <li class="scroll-to-section"><a href="#courses">Nosotros</a></li>
+                        <li class="scroll-to-section"><a href="#meetings">Nosotros</a></li>
                         <li class="scroll-to-section"><a href="#contact">Contact</a></li>
-                        <li class="scroll-to-section"><a href="#apply">Postular</a></li>
+                        <li><a href="https://linktr.ee/soywarmi" target="_blank">Postular</a>
+                        </li>
                         <li class="has-sub">
                             <a href="javascript:void(0)">
                                 {{ config('app.locale') }}

@@ -1380,7 +1380,7 @@ section.our-facts h2 {
 section.our-facts .video {
     text-align: center;
     margin-left: 70px;
-    background-image: url(../images/video-item-bg.jpg);
+    background-image: url(../images/soywarmiall.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1673,8 +1673,7 @@ section.meetings-page .pagination ul li a:hover {
 .meeting-single-item .down-content {
     background-color: #fff;
     padding: 40px;
-    /* border-bottom-right-radius: 20px; */
-    /* border-bottom-left-radius: 20px; */
+    border-radius: 20px;
 }
 
 .meeting-single-item .thumb .date {

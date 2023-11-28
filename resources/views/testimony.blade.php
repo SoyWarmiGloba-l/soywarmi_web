@@ -26,8 +26,7 @@
                                             }}</span>
                                     </div>
                                 </div>
-                                <div class="down-content border-color-card"
-                                    style="border-radius: 5%; border-width: 5px; border-style: solid; border-color: #F2AE5D;">
+                                <div class="down-content">
                                     <a href="meeting-details.html">
                                         <h4>{{ $testimony->title }}</h4>
                                     </a>
