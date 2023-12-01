@@ -59,36 +59,41 @@
                             </div>
                         </div>
 
-                        <div class="item">
-                            <div class="icon">
-                                <img src="assets/images/service-icon-02.png" alt="">
-                            </div>
-                            <div class="down-content">
-                                <h4>World Learning.</h4>
-                                <p>{{ __('home.impulsing') }}</p>
-                            </div>
-                        </div>
+                        <a href="https://www.worldlearning.org" target="_blank">
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="assets/images/service-icon-02.png" alt="">
+                                </div>
 
-                        <div class="item">
-                            <div class="icon">
-                                <img src="assets/images/service-icon-02.png" alt="">
-                            </div>
-                            <div class="down-content">
-                                <h4>The Pollination Project.</h4>
-                                <p>{{ __('home.bestpopulationproyect') }}</p>
-                            </div>
-                        </div>
+                                <div class="down-content">
+                                    <h4>World Learning.</h4>
+                                    <p>{{ __('home.impulsing') }}</p>
+                                </div>
 
-                        <div class="item">
-                            <div class="icon">
-                                <img src="assets/images/service-icon-03.png" alt="">
                             </div>
-                            <div class="down-content">
-                                <h4>{{ __('home.bestparticipating') }}</h4>
-                                <p>{{ __('home.bestparticipatingdescription') }}</p>
+                        </a>
+                        <a href="https://thepollinationproject.org" target="_blank">
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="assets/images/service-icon-02.png" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>The Pollination Project.</h4>
+                                    <p>{{ __('home.bestpopulationproyect') }}</p>
+                                </div>
                             </div>
-                        </div>
-
+                        </a>
+                        <a href="https://www.unesco.org" target="_blank">
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="assets/images/service-icon-03.png" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>{{ __('home.bestparticipating') }}</h4>
+                                    <p>{{ __('home.bestparticipatingdescription') }}</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -103,12 +108,12 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="categories">
+                    <div class="categories" style="border-width: 5px; border-style: solid; border-color: #00858E;">
                         <h4>{{ __('home.whyus1') }}</h4>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="categories">
+                    <div class="categories" style="border-width: 5px; border-style: solid; border-color: #F2AE5D;">
                         <h4>{{ __('home.whyus2') }}</h4>
                     </div>
                 </div>
@@ -225,7 +230,77 @@
             </div>
         </div>
     </section> --}}
-
+    <section class="our-facts" style="padding-top: 10px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2>{{ __('home.smallus') }}</h2>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="count-area-content">
+                                        <div class="count-digit" style="color: #00858E">70</div>
+                                        <div class="count-title">{{ __('home.countPerson') }}</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="count-area-content">
+                                        <div class="count-digit" style="color: #8B3A3D">500</div>
+                                        <div class="count-title">{{ __('home.countWork') }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="count-area-content new-students">
+                                        <div class="count-digit" style="color: #F2AE5D">10</div>
+                                        <div class="count-title">{{ __('home.countEducation') }}</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="count-area-content">
+                                        <div class="count-digit" style="color: #A9CDDB">150</div>
+                                        <div class="count-title">{{ __('home.countVoluntary') }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="video">
+                        {{-- <a href="https://youtu.be/efiYGs8wBOg?si=LY8x8iV-l1p-hqEW" target="_blank"><img
+                                src="assets/images/play-icon.png" alt=""></a> --}}
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/efiYGs8wBOg?si=amFObweIWnPYfudx"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="main-button-red mb-4 animated flash">
+                            <div>
+                                <a href="{{ route('our-mission') }}">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M12 8l4 4-4 4M8 12h7" />
+                                    </svg>
+                                    {{ __('home.donation') }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="apply-now" id="apply">
         <div class="container text-center">
             <div class="row">
@@ -264,7 +339,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="accordions is-first-expanded">
+                    <div class="accordions is-first-expanded"
+                        style="border-width: 5px; border-style: solid; border-color: #8B3A3D;">
                         @forelse($otherNews as $new)
                         <article class="accordion @if($loop->last) last-accordion @endif">
                             <div class="accordion-head">
@@ -299,8 +375,7 @@
             </div>
         </div>
     </section>
-
-    <section class="our-courses" id="courses" style="padding-top: 30px;">
+    <section class="our-courses" id="courses" style="padding-top: 10px; padding-bottom: 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -314,6 +389,13 @@
                     <div class="owl-courses-item owl-carousel">
                         @forelse ($testimonies as $testimony)
                         <div class="item">
+                            @php
+                            $arrayColores = [
+                            'F2AE5D',
+                            '8B3A3D',
+                            '00858E'
+                            ];
+                            @endphp
                             <a href="{{ route('testimony.show', $testimony->slug) }}" target="_blank">
                                 {{-- @if ($testimony->person->role_id == 3)
                                 <img src="https://ui-avatars.com/api/?name={{ $testimony->person->name }}?size=50"
@@ -321,7 +403,8 @@
                                 @else
                                 <img src="{{ $testimony->person->photo }}" alt="Course One">
                                 @endif --}}
-                                <div class="down-content">
+                                <div class="down-content"
+                                    style="border-width: 5px; border-style: solid; border-color: #{{ $arrayColores[rand(0, 2)] }};">
                                     <h4>{{ $testimony->title }}</h4>
                                     <div class="info">
                                         <div class="row">
@@ -336,58 +419,6 @@
                         @empty
                         No hay
                         @endforelse
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="our-facts">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2>{{ __('home.smallus') }}</h2>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="count-area-content">
-                                        <div class="count-digit">70</div>
-                                        <div class="count-title">{{ __('home.countPerson') }}</div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="count-area-content">
-                                        <div class="count-digit">500</div>
-                                        <div class="count-title">{{ __('home.countWork') }}</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="count-area-content new-students">
-                                        <div class="count-digit">10</div>
-                                        <div class="count-title">{{ __('home.countEducation') }}</div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="count-area-content">
-                                        <div class="count-digit">150</div>
-                                        <div class="count-title">{{ __('home.countVoluntary') }}</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 align-self-center">
-                    <div class="video">
-                        <a href="https://youtu.be/efiYGs8wBOg?si=LY8x8iV-l1p-hqEW" target="_blank"><img
-                                src="assets/images/play-icon.png" alt=""></a>
                     </div>
                 </div>
             </div>

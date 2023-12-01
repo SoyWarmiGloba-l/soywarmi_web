@@ -22,6 +22,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/testimony', [TestimonyController::class, 'index'])->name('testimony');
 Route::get('/testimony/{slug}', [TestimonyController::class, 'show'])->name('testimony.show');
 Route::get('/our-mission', [HomeController::class, 'indexOurMission'])->name('our-mission');
+Route::get('/projects_programs', [HomeController::class, 'indexProyectos'])->name('projects_programs');
 
 Route::get('locale/{locale}', function ($locale) {
     session()->put('locale', $locale);

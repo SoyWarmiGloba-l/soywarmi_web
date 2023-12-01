@@ -29,4 +29,9 @@ class HomeController extends Controller
 
         return view('our-mission', compact('teams'));
     }
+
+    public function indexProyectos()
+    {
+        return view('projects_programs');
+    }
 }

@@ -17,28 +17,45 @@
                         <div class="col-lg-12">
                             <div class="meeting-single-item">
                                 <div class="down-content" style="border-radius: 2%;">
-                                    <h4>{{ __('ourmission.about_us') }}</h4>
+                                    <h4 class="stylea">{{ __('ourmission.about_us') }}</h4>
                                     <p class="description" style="margin-top: 10px;">
                                         {{ __('ourmission.description_us') }}
+                                        <a href="{{ route('projects_programs') }}" class="btn btn-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10" />
+                                                <path d="M12 8l4 4-4 4M8 12h7" />
+                                            </svg>
+                                            {{ __('home.programsprojects') }}
+                                        </a>
                                     </p>
-                                    <h4>{{ __('ourmission.tittle_history_us') }}</h4>
+                                    <h4 class="styleaaa">{{ __('ourmission.tittle_history_us') }}</h4>
                                     <p class="description" style="margin-top: 10px;">
                                         {{ __('ourmission.history_us') }}
                                     </p>
-                                    <h4>{{ __('ourmission.tittle_why_us') }}</h4>
+                                    <h4 class="styleaaaa">{{ __('ourmission.tittle_why_us') }}</h4>
                                     <p class="description" style="margin-top: 10px;">
                                         {{ __('ourmission.why_us') }}
                                     </p>
-                                    <h4>{{ __('ourmission.team_tittle_us') }}</h4>
-                                    <div class="row">
+                                    <h4 class="stylea">{{ __('ourmission.team_tittle_us') }}</h4>
+                                    <div class="row d-flex">
                                         <div class="col-lg-12">
+                                            @php
+                                            $arrayColores = [
+                                            'F2AE5D',
+                                            '8B3A3D',
+                                            '00858E'
+                                            ];
+                                            @endphp
                                             <div class="row grid">
                                                 @forelse ($teams as $team)
                                                 @foreach ($team->person as $person)
-                                                <div class="col-lg-4 templatemo-item-col all soon">
+                                                <div class="col-lg-4 templatemo-item-col all soon mr-5"
+                                                    >
                                                     <div class="meeting-item">
                                                         <div class="thumb">
-                                                            <a href="meeting-details.html"><img
+                                                            <a href="#"><img class="mx-auto d-block w-50"
                                                                     src="{{ env('API_URL_API') . '/' . $person->photo }}"
                                                                     alt=""></a>
                                                         </div>

@@ -13,11 +13,11 @@
                     <ul class="nav">
                         {{--<li class="scroll-to-section"><a href="{{ route('home') }}" class="active">Inicio</a></li>
                         --}}
-                        <li><a href="meetings.html">Programas</a></li>
-                        <li><a href="{{ route('resources') }}">Recursos</a></li>
+                        <li><a class="stylea" href="{{ route('projects_programs') }}">Programas</a></li>
+                        <li><a class="styleaa" href="{{ route('resources') }}">Recursos</a></li>
                         <li class="scroll-to-section"><a href="#meetings">Nosotros</a></li>
-                        <li class="scroll-to-section"><a href="#contact">Contact</a></li>
-                        <li><a href="https://linktr.ee/soywarmi" target="_blank">Postular</a>
+                        <li class="scroll-to-section"><a class="styleaaa" href="#contact">Contact</a></li>
+                        <li><a class="styleaaaa" href="https://linktr.ee/soywarmi" target="_blank">Postular</a>
                         </li>
                         <li class="has-sub">
                             <a href="javascript:void(0)">

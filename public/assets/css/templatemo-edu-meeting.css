@@ -171,6 +171,26 @@ a {
     color: #093449;
 }
 
+.stylea {
+    text-decoration: none !important;
+    color: #00858e !important;
+}
+
+.styleaa {
+    text-decoration: none !important;
+    color: #f2ae5d !important;
+}
+
+.styleaaa {
+    text-decoration: none !important;
+    color: #967579 !important;
+}
+
+.styleaaaa {
+    text-decoration: none !important;
+    color: #d9908b !important;
+}
+
 a:hover {
     color: #8b3a3d;
 }
@@ -190,7 +210,7 @@ ul {
 }
 
 p {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 25px;
     color: #2a2a2a;
 }
@@ -336,16 +356,16 @@ header
 }
 
 .background-header .main-nav .nav li a {
-    color: #1e1e1e !important;
+    color: #1e1e1e;
 }
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-    color: #1e1e1e !important;
+    color: #d9908b;
 }
 
 .background-header .main-nav .nav li:hover a {
-    color: #fb5849 !important;
+    color: #f2ae5d !important;
 }
 
 .background-header .nav li a.active {
@@ -827,7 +847,7 @@ banner
 
 .main-banner .caption p {
     color: #fff;
-    font-size: 14px;
+    font-size: 20px;
     max-width: 570px;
 }
 
@@ -1031,8 +1051,8 @@ section.upcoming-meetings .categories .main-button-red a {
 }
 
 .meeting-item .thumb img {
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    /* border-top-right-radius: 20px; */
+    /* border-top-left-radius: 20px; */
 }
 
 .meeting-item .thumb .price {
@@ -1189,7 +1209,7 @@ section.our-courses {
     background-repeat: no-repeat;
     background-size: cover;
     /* padding-top: 140px; */
-    padding-bottom: 130px;
+    /* padding-bottom: 130px; */
 }
 
 .our-courses .item .down-content {
@@ -1380,7 +1400,7 @@ section.our-facts h2 {
 section.our-facts .video {
     text-align: center;
     margin-left: 70px;
-    background-image: url(../images/soywarmiall.png);
+    /* background-image: url(../images/soywarmiall.png); */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1651,8 +1671,8 @@ section.meetings-page .pagination ul li a:hover {
 }
 
 .meeting-single-item .thumb img {
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    /* border-top-right-radius: 20px; */
+    /* border-top-left-radius: 20px; */
 }
 
 .meeting-single-item .thumb .price {
@@ -1961,10 +1981,11 @@ responsive
 }
 
 .animated {
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    animation-iteration-count: infinite;
 }
 @-webkit-keyframes flash {
     0%,
