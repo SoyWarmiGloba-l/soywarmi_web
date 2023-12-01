@@ -6,7 +6,7 @@
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="{{ route('home') }}" class="logo">
-                        <img class="w-50" src="{{ asset('assets/images/logo.png') }}" />
+                        <img class="w-50 img-fluid" src="{{ asset('assets/images/logo_warmi.png') }}" />
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->

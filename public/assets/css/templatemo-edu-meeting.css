@@ -391,8 +391,9 @@ header
 }
 
 .header-area .main-nav .logo {
+    width: 29.7rem;
     line-height: 100px;
-    color: #fff;
+    /* color: transparent; */
     font-size: 28px;
     font-weight: 700;
     text-transform: uppercase;
@@ -448,6 +449,7 @@ header
     line-height: 40px;
     border: transparent;
     letter-spacing: 1px;
+    /* justify-content: space-between; */
 }
 
 .header-area .main-nav .nav li:hover a,
