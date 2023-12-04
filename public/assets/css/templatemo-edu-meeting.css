@@ -172,6 +172,8 @@ a {
 }
 
 .stylea {
+    width: 20ch;
+    white-space: nowrap;
     text-decoration: none !important;
     color: #00858e !important;
 }
@@ -1728,7 +1730,7 @@ section.meetings-page .pagination ul li a:hover {
     font-size: 22px;
     color: #1f272b;
     font-weight: 600;
-    display: inline-block;
+    display: block;
     margin-bottom: 15px;
 }
 
@@ -1742,7 +1744,7 @@ section.meetings-page .pagination ul li a:hover {
 
 .meeting-single-item .down-content p {
     color: #1f272b;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .meeting-single-item .down-content p.description {
@@ -2014,4 +2016,21 @@ responsive
 .flash {
     -webkit-animation-name: flash;
     animation-name: flash;
+}
+.animatedWord {
+    animation: typing 2s steps(20), blink 0.5s step-end alternate infinite;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
