@@ -24,5 +24,7 @@ return [
     'warmiam' => 'It is a program looking for Bolivian Ambassadors between the ages of 18 and 30! who, together with a team of medical professionals, will travel to different communities in rural, urban and peri-urban areas of their country, to provide workshops on Comprehensive Sexual Education. If you are interested in disseminating and teaching Comprehensive Sexual Education in different communities, this is your opportunity to make a significant difference.',
     'warmipas' => 'We value the diversity and wealth of knowledge that each person can contribute, which is why we will provide the opportunity to be part of SW by sharing your knowledge. In addition, we make a special invitation to women from related areas, such as STEM careers in which applications and websites are developed.',
     'donation' => 'Donation here',
-    'faqs' => 'Frequent Questions'
+    'faqs' => 'Frequent Questions',
+    'click' => 'Click on it!!',
+    'tittleResource' => 'You can find important resources here'
 ];

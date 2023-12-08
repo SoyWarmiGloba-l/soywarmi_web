@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h6>Puedes encontrar recursos importantes aqui</h6>
-                    <h2>Dale Click!!</h2>
+                    <h6>{{ __('home.tittleResource') }}</h6>
+                    <h2>{{ __('home.click') }}</h2>
                 </div>
             </div>
         </div>
@@ -14,32 +14,22 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
-                        <style>
-                            .list-group-item.active {
-                                background-color: #f2ae5d;
-                                color: white;
-                                border-color: transparent;
-                            }
-
-                            .list-group-item.active a {
-                                color: white;
-                            }
-                        </style>
                         <div class="col-lg-12">
-                            <div class="row mb-4">
-                                <ul class="listado list-group list-group-horizontal">
-                                    <li class="list-group-item bg-danger"><a href="#" style="color: white;">Todos</a>
-                                    </li>
+                            <div class="filters">
+                                <ul>
+                                    <li data-filter="*" class="active">Todos</li>
                                     @forelse ($type_resources as $type)
-                                    <li class="list-group-item"><a href="#">{{ $type }}</a></li>
+                                    <li data-filter=".{{ $type }}">{{ $type }}</li>
                                     @empty
                                     @endforelse
                                 </ul>
                             </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row grid">
 
-                            <div class="row grid filtros">
                                 @forelse($resources as $resource)
-                                <div class="col-lg-4 templatemo-item-col all soon {{ $resource->code_type }}">
+                                <div class="col-lg-4 templatemo-item-col all {{ $resource->code_type }}">
                                     <a href="{{ asset($resource->url) }}" target="_blank">
                                         <div class="meeting-item">
                                             <div class="thumb">
@@ -63,25 +53,13 @@
                                 @endforelse
                             </div>
                         </div>
-                        <x-layouts.back_home />
-                        {{--<div class="col-lg-12">
-                            <div class="pagination">
-                                <ul>
-                                    <li><a href="#">1</a></li>
-                                    <li class="active"><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>--}}
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
     @section('js')
-    <script>
+    {{-- <script>
         $(document).ready(function(){
         $('ul.listado li a').click(function() {
             $(this).parent().addClass('active').siblings().removeClass('active');
@@ -100,6 +78,7 @@
         case 'pdf':
             textoFiltro = 'pdf';
         break;
+
         default:
             textoFiltro = 'todos';
         break;
@@ -126,6 +105,6 @@
         return false;
         });
         });
-    </script>
+    </script> --}}
     @endsection
 </x-layouts.app>
