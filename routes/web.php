@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FaqController;
 use App\Http\Controllers\InfoController;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
@@ -19,6 +20,7 @@ use App\Http\Controllers\TestimonyController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+Route::get('/faqs', [FaqController::class, 'index'])->name('faq.index');
 Route::get('/testimony', [TestimonyController::class, 'index'])->name('testimony');
 Route::get('/testimony/{slug}', [TestimonyController::class, 'show'])->name('testimony.show');
 Route::get('/our-mission', [HomeController::class, 'indexOurMission'])->name('our-mission');

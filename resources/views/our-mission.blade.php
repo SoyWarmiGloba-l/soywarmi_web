@@ -15,7 +15,7 @@
                 <div class="col-lg-8">
                     <div class="meeting-single-item">
                         <div class="down-content" style="border-radius: 5%;">
-                            <h4 class="stylea animatedWord">{{ __('ourmission.about_us') }}</h4>
+                            <h4 class="stylea">{{ __('ourmission.about_us') }}</h4>
                             <p class="description" style="margin-top: 10px; margin-bottom: 0; padding-bottom: 0;">
                                 {{ __('ourmission.description_us') }}</p>
                             <button class="btn btn-danger animated flash" style="margin-top: 4px; border-radius: 12px;">
@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-lg-4 d-flex align-items-center">
                     <div class="meeting-single-item">
-                        <div class="down-content" style="border-radius: 2%;">
+                        <div class="down-content" style="border-radius: 20px;">
                             <img src="{{ asset('assets/images/logohorizontal.png') }}">
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                 <div class="col">
                     <div class="meeting-single-item">
                         <div class="down-content" style="border-radius: 5%;">
-                            <h4 class="stylea animatedWord">{{ __('ourmission.tittle_history_us') }}</h4>
+                            <h4 class="stylea">{{ __('ourmission.tittle_history_us') }}</h4>
                             <p class="description" style="margin-top: 10px; margin-bottom: 0; padding-bottom: 0;">
                                 {{ __('ourmission.history_us') }}</p>
                         </div>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="col d-flex align-items-center">
                     <div class="meeting-single-item">
-                        <div class="down-content" style="border-radius: 2%;">
+                        <div class="down-content" style="border-radius: 20px;">
                             <div class="video w-50">
                                 {{-- <a href="https://youtu.be/efiYGs8wBOg?si=LY8x8iV-l1p-hqEW" target="_blank"><img
                                         src="assets/images/play-icon.png" alt=""></a> --}}
@@ -65,18 +65,19 @@
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="col-lg-8">
+                <div class="col-lg-4 d-flex align-items-center">
                     <div class="meeting-single-item">
-                        <div class="down-content" style="border-radius: 5%;">
-                            <h4 class="stylea animatedWord">{{ __('ourmission.tittle_why_us') }}</h4>
-                            <p class="description" style="margin-top: 10px; margin-bottom: 0; padding-bottom: 0;">
-                                {{ __('ourmission.why_us') }}</p>
+                        <div class="down-content" style="border-radius: 20px;">
+                            <img src="{{ asset('assets/images/warmi_ambassors2.jpg') }}">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex align-items-center">
+                <div class="col-lg-8">
                     <div class="meeting-single-item">
-                        <div class="down-content" style="border-radius: 2%;">
+                        <div class="down-content" style="border-radius: 20px;">
+                            <h4 class="stylea">{{ __('ourmission.tittle_why_us') }}</h4>
+                            <p class="description" style="margin-top: 10px; margin-bottom: 0; padding-bottom: 0;">
+                                {{ __('ourmission.why_us') }}</p>
                         </div>
                     </div>
                 </div>

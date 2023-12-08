@@ -23,5 +23,6 @@ return [
     'programsprojects' => 'Programas y proyectos',
     'warmiam' => 'Es un programa en busca de Embajadoras bolivianas entre las edades de 18 y 30 años! que junto a un equipo de profesionales médicos viajará a diferentes comunidades en zonas rurales, urbanas y periurbanas de su país, para brindar talleres sobre Educación Sexual Integral.  Si tienes interés en la difusión y enseñanza de la Educación Sexual Integral en diferentes comunidades, esta es tu oportunidad de marcar una diferencia significativa.',
     'warmipas' => 'Valoramos la diversidad y la riqueza de conocimientos que cada persona puede aportar, es por ello que brindaremos la oportunidad de ser parte de SW a través de compartir tus conocimientos. Además, hacemos una invitación especial a mujeres de áreas relacionadas, como carreras de STEM en las que se desarrollan aplicaciones y páginas web.',
-    'donation' => 'Donaciones aquí'
+    'donation' => 'Donaciones aquí',
+    'faqs' => 'Preguntas Frecuentes'
 ];

@@ -274,19 +274,19 @@
                 </div>
                 <div class="col-lg-6 align-self-center">
                     <div class="video">
-                        {{-- <a href="https://youtu.be/efiYGs8wBOg?si=LY8x8iV-l1p-hqEW" target="_blank"><img
-                                src="assets/images/play-icon.png" alt=""></a> --}}
+                        {{-- <a href="https://www.youtube.com/embed/efiYGs8wBOg?si=amFObweIWnPYfudx"
+                            target="_blank"><img src="assets/images/play-icon.png" alt=""></a> --}}
                         <iframe width="560" height="315"
                             src="https://www.youtube.com/embed/efiYGs8wBOg?si=amFObweIWnPYfudx"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                     </div>
-                    <div style="text-align: center;">
+                    <div style="text-align: center; padding-left: 200px;">
                         <div class="main-button-red mb-4 animated flash">
                             <div>
                                 <a href="{{ route('our-mission') }}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                         fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
                                         <circle cx="12" cy="12" r="10" />
@@ -397,19 +397,13 @@
                             ];
                             @endphp
                             <a href="{{ route('testimony.show', $testimony->slug) }}" target="_blank">
-                                {{-- @if ($testimony->person->role_id == 3)
-                                <img src="https://ui-avatars.com/api/?name={{ $testimony->person->name }}?size=50"
-                                    alt="Course One">
-                                @else
-                                <img src="{{ $testimony->person->photo }}" alt="Course One">
-                                @endif --}}
                                 <div class="down-content"
-                                    style="border-width: 5px; border-style: solid; border-color: #{{ $arrayColores[rand(0, 2)] }};">
-                                    <h4>{{ $testimony->title }}</h4>
+                                    style="border-width: 5px; border-style: solid; border-radius: 20px; border-color: #{{ $arrayColores[rand(0, 2)] }};">
+                                    <h4>{{ $testimony->person->name }}</h4>
                                     <div class="info">
                                         <div class="row">
                                             <div class="col-12" style="word-break: break-all;">
-                                                <p>{{ Str::limit($testimony->description, 50, '...') }}</p>
+                                                <p>{{ Str::limit($testimony->description, 100, '...') }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -437,6 +431,12 @@
                                     <div class="scroll-to-section"><a href="#contact">Leer más-></a></div>
                                 </div>
                             </div> --}}
+                            <style>
+                                .carousel {
+                                    border-radius: 20px;
+                                    overflow: hidden;
+                                }
+                            </style>
                             <div id="carouselExampleCaptions" class="carousel slide w-50" data-bs-ride="carousel">
                                 <div class="carousel-indicators">
                                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -447,7 +447,7 @@
                                         aria-label="Slide 3"></button>
                                 </div>
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active">
+                                    <div class="carousel-item active rounded-4">
                                         <img src="{{ asset('assets/images/course-01.jpg') }}" class="d-block w-100"
                                             alt="...">
                                         <div class="carousel-caption d-none d-md-block">

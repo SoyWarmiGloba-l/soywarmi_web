@@ -1191,7 +1191,7 @@ section.apply-now .item p {
 }
 .accordion-body {
     overflow: hidden;
-    height: 0;
+    /* height: 0; */
     transition: height 300ms ease-in-out;
     border-bottom: 1px solid #fff;
 }

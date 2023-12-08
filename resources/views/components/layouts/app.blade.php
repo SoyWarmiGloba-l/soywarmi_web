@@ -92,8 +92,7 @@
         });
     </script>
     {!! Toastr::message() !!}
-</body>
-
+    @yield('js')
 </body>
 
 </html>

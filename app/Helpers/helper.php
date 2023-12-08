@@ -10,10 +10,9 @@ function authenticate()
         "password" =>  env('API_PASSWORD'),
         "returnSecureToken" =>  true
     ]);
-
-    $response_auth = Http::withHeaders([
+    /* $response_auth = Http::withHeaders([
         'Authorization' => 'Bearer ' . $response->json()["idToken"],
-    ])->post(env('API_URL_API') . '/api/auth/login', []);
+    ])->post(env('API_URL_API') . '/api/auth/login', []); */
 
     return $response->json()["idToken"];
 }
@@ -28,9 +27,9 @@ function getApiData($url, $data)
         $token = authenticate();
     }
     if (empty($data)) {
-        $response = Http::withToken($token)->get(env('API_URL_API') . '/api/v1/' . $url);
+        $response = Http::withHeaders(['accept' => 'application/json'])->withToken($token)->get(env('API_URL_API') . '/api/v1/' . $url);
     } else {
-        $response = Http::withToken(authenticate())->post($url, $data);
+        $response = Http::withHeaders(['accept' => 'application/json'])->withToken($token)->post($url, $data);
     }
 
     return json_decode($response->body())->data;
