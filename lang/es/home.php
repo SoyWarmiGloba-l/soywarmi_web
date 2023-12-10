@@ -27,4 +27,5 @@ return [
     'faqs' => 'Preguntas Frecuentes',
     'click' => 'Dale Click!!!',
     'tittleResource' => 'Puedes encontrar recursos importantes aqui',
+    'teamTittle' => 'Nuestro equipo',
 ];

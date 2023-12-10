@@ -1075,6 +1075,7 @@ section.upcoming-meetings .categories .main-button-red a {
 }
 
 .meeting-item .down-content {
+    height: 100%;
     background-color: #fff;
     padding: 30px;
     border-radius: 20px;
@@ -1124,7 +1125,7 @@ apply now
 */
 
 section.apply-now {
-    background-image: url(../images/apply-bg.jpg);
+    background-image: url(../images/make\ group2.jpg);
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1229,7 +1230,7 @@ section.our-courses {
 }
 
 .our-courses .item .down-content .info {
-    padding: 25px;
+    padding: 20px;
 }
 
 .our-courses .item .down-content .info ul li {
@@ -1258,12 +1259,30 @@ section.our-courses {
     top: 50%;
     transform: translateY(-45px);
 }
+/* .owl-carousel .owl-stage {
+    display: flex !important;
+}
 
+.owl-carousel .owl-item div {
+    width: auto !important;
+    height: 100% !important;
+    max-height: 100% !important;
+} */
+
+/* .our-courses .owl-carousel .owl-stage {
+    display: flex;
+}
+
+.our-courses .owl-carousel .owl-item .item .down-content {
+    width: auto !important;
+    height: 100% !important;
+} */
 .our-courses .owl-dots {
     display: inline-block;
     text-align: center;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 0;
+    margin-bottom: 14px;
 }
 
 .our-courses .owl-dots .owl-dot {
@@ -1354,7 +1373,7 @@ our facts
 */
 
 section.our-facts {
-    background-image: url(../images/facts-bg.jpg);
+    background-image: url(../images/Mask\ group1.jpg);
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1560,7 +1579,7 @@ heading page
 */
 
 section.heading-page {
-    background-image: url(../images/heading-bg.jpg);
+    background-image: url(../images/Group\ SoyWarmi.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 style="text-transform: none;">SoyWarmi</h2>
+                    <h2 style="text-transform: none; color: white">SoyWarmi</h2>
                 </div>
             </div>
         </div>
@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="meeting-single-item">
-                        <div class="down-content" style="border-radius: 5%;">
+                        <div class="down-content" style="border-radius: 20px;">
                             <h4 class="stylea">{{ __('ourmission.about_us') }}</h4>
                             <p class="description" style="margin-top: 10px; margin-bottom: 0; padding-bottom: 0;">
                                 {{ __('ourmission.description_us') }}</p>
@@ -82,5 +82,50 @@
                     </div>
                 </div>
             </div>
+    </section>
+    <section class="our-courses" id="courses">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>{{ __('home.teamTittle') }}&nbsp;😊</h2>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="owl-courses-item owl-carousel">
+                        @php
+                        $arrayColores = [
+                        'F2AE5D',
+                        '8B3A3D',
+                        '00858E'
+                        ];
+                        @endphp
+                        @forelse ($teams[0]->person as $personas)
+                        @php
+                        $color = $arrayColores[rand(0, 2)];
+                        @endphp
+                        <div class="item">
+                            <img src="{{ env('API_URL_API') . $personas->photo }}" style="border-width: 0 5px 5px 5px; border-style: solid; border-radius: 20px 20px 0 0; border-color: #{{ $color }};
+                                alt=" Course One">
+                            <div class="down-content"
+                                style="border-width: 0 5px 5px 5px; border-style: solid; border-radius: 0 0 20px 20px; border-color: #{{ $color }};">
+                                <h4>{{ $personas->description }}</h4>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="col">
+                                            <span>{{ $personas->name . " " . $personas->lastname }}</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @empty
+                        No hay equipo
+                        @endforelse
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </x-layouts.app>

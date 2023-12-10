@@ -26,5 +26,6 @@ return [
     'donation' => 'Donation here',
     'faqs' => 'Frequent Questions',
     'click' => 'Click on it!!',
-    'tittleResource' => 'You can find important resources here'
+    'tittleResource' => 'You can find important resources here',
+    'teamTittle' => 'Our team'
 ];

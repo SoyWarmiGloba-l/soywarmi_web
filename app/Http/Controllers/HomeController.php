@@ -26,6 +26,7 @@ class HomeController extends Controller
     public function indexOurMission()
     {
         $teams = getApiData($this->teamEndPoint . '/rol/5', []);
+        //dd($teams[0]->person);
 
         return view('our-mission', compact('teams'));
     }
