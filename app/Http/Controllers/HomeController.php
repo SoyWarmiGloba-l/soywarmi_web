@@ -13,6 +13,7 @@ class HomeController extends Controller
     {
         $news = getApiData($this->newsEndpoint, []);
         $testimonies = getApiData($this->testimonyEndPoint, []);
+        
 
         $news1 = $news[0];
         $news2 = $news[1];
