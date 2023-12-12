@@ -5,7 +5,7 @@
           <source src="assets/images/course-video.mp4" type="video/mp4" />
       </video> -->
         <img id="bg-video" src="{{ asset('assets/images/soywarmiall.png') }}" alt="">
-
+        <x-layouts.modalSubcribe />
         <div class="video-overlay header-text">
             <div class="container">
                 <div class="row">

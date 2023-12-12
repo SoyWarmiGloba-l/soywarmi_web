@@ -42,8 +42,9 @@
     <script src="{{ asset('assets/js/tabs.js') }}"></script>
     <script src="{{ asset('assets/js/video.js') }}"></script>
     <script src="{{ asset('assets/js/slick-slider.js') }}"></script>
-    <script src="{{ asset('assets/js/custom.js') }}"></script>
+    <script src="{{ asset('assets/js/custom.js') }}"></script>    
     <script src="{{ asset('toastr.min.js') }}"></script>
+    <script src="{{ asset('assets/js/subcribe.js') }}"></script>
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');
@@ -91,6 +92,11 @@
           checkSection();
         });
     </script>
+    <script>
+    $( document ).ready(function() {
+    $('#exampleModal').modal('toggle')
+});
+</script>
     {!! Toastr::message() !!}
     @yield('js')
 </body>
