@@ -176,6 +176,7 @@ a {
     white-space: nowrap;
     text-decoration: none !important;
     color: #00858e !important;
+    text-transform: uppercase;
 }
 
 .styleaa {
@@ -1614,7 +1615,7 @@ upcoming meetings page
 */
 
 section.meetings-page {
-    background-image: url(../images/meetings-page-bg.jpg);
+    /*background-image: url(../images/meetings-page-bg.jpg);*/
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1746,6 +1747,7 @@ section.meetings-page .pagination ul li a:hover {
 }
 
 .meeting-single-item .down-content h4 {
+    font-family: "Montserrat";
     font-size: 22px;
     color: #1f272b;
     font-weight: 600;
@@ -1768,7 +1770,9 @@ section.meetings-page .pagination ul li a:hover {
 
 .meeting-single-item .down-content p.description {
     /* margin-top: 40px; */
-    padding-top: 40px;
+    font-family: inherit !important;
+    font-size: 19px;
+    padding-top: 0px;
     border-top: 1px solid #eee;
     margin-bottom: 40px;
     padding-bottom: 40px;

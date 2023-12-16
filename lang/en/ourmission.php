@@ -3,7 +3,7 @@
 return [
     'mission_title' => 'Our mission',
     'about_us' => 'About us',
-    'tittle_history_us' => 'History of Soy Warmi',
+    'tittle_history_us' => 'History',
     'description_us' => 'We are SoyWarmi, a non-profit youth organization dedicated to promoting comprehensive sexual education. Developers of the Warmi Ambassadors project. Our mission is to break taboos and prevent sexually transmitted diseases, as well as unwanted pregnancies. We work to empower vulnerable communities, especially in rural areas of Latin America.',
     'history_us' => 'SoyWarmi was born in 2021, founded by a group of women with the conviction of addressing comprehensive sexual education. Since then, under the leadership of Valentina Wiñay Quispe, Meryan Echeverría, Melissa Jancko, Nicole Yañez, Laura Aguirre, Hilary Paredes, and Gabriela Naupari we have grown and expanded our activities, breaking taboos and strengthening ties between young people. The support of organizations has been fundamental in our rise, allowing us to positively impact communities through in-person workshops in various departments of Bolivia.',
     'tittle_why_us' => 'Why us?',

@@ -9,7 +9,7 @@
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="shortcut icon" href="{{ asset('assets/images/Imagen2.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('favicon1.ico') }}" type="image/x-icon">
     <title>SoyWarmi</title>
 
     <!-- Bootstrap core CSS -->
@@ -42,7 +42,7 @@
     <script src="{{ asset('assets/js/tabs.js') }}"></script>
     <script src="{{ asset('assets/js/video.js') }}"></script>
     <script src="{{ asset('assets/js/slick-slider.js') }}"></script>
-    <script src="{{ asset('assets/js/custom.js') }}"></script>    
+    <script src="{{ asset('assets/js/custom.js') }}"></script>
     <script src="{{ asset('toastr.min.js') }}"></script>
     <script src="{{ asset('assets/js/subcribe.js') }}"></script>
     <script>
@@ -93,10 +93,10 @@
         });
     </script>
     <script>
-    $( document ).ready(function() {
+        $( document ).ready(function() {
     $('#exampleModal').modal('toggle')
 });
-</script>
+    </script>
     {!! Toastr::message() !!}
     @yield('js')
 </body>
